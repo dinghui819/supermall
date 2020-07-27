@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+</html>
+<script src="aa.js"></script>
+<script src="bb.js"></script>
+<script>
+  // 这是模块最基础的封装，还有更高级的封装，通过Com
+  // aa.js和bb.js中都定义了flag,bb.js中的flag为false,所以打印不出来（这里就出现了命名重复的问题）
+  // 解决方法：使用匿名函数(缺点：我们访问不了匿名函数里面的东西)，但是我们通过定义一个对象，在对象中定义变量和方法，然后将对象返回,就可以访问了
+  if(moduleA.flag){
+    console.log("小明真帅")
+  }
+  console.log(moduleA.flag)
+</script>

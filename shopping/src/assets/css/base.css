@@ -1,0 +1,10 @@
+/* 引入css文件 */
+@import "normalize.css";
+*{
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
